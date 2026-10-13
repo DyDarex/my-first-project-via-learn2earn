@@ -6,8 +6,15 @@ def budget_message(name, remaining):
     return f"{name} has {remaining} remaining."
     pass
 
+print(budget_remaining(2000, 900, 600))
 print(budget_remaining(1500, 0, 0))
 print(budget_remaining(1000,800,500))
+
 remainings = budget_remaining(2000, 900, 600)
+remaining = budget_remaining(1000,800,500)
+
 message= budget_message("Ada", remainings)
+result= budget_message("Tobi", remaining)
+
 print(message)
+print(result)
