@@ -1,20 +1,21 @@
-def budget_remaining(budget, food, transport):
-    return budget - food - transport
+def budget_remaining(budget, food, transport, other_expenses):
+    return budget - food - transport - other_expenses
     pass
 
 def budget_message(name, remaining):
     return f"{name} has {remaining} remaining."
     pass
 
-print(budget_remaining(2000, 900, 600))
-print(budget_remaining(1500, 0, 0))
-print(budget_remaining(1000,800,500))
+print(budget_remaining(1000, 200, 600, 100))  #normal case
+# print(budget_remaining(1500, 0, 0))        #zero case
+#print(budget_remaining(1000,800,500))       #over spend case
 
-remainings = budget_remaining(2000, 900, 600)
-remaining = budget_remaining(1000,800,500)
+#remainings =3q) #for ada
+#remaining = budget_remaining(1000,800,500)   #for tobi
 
-message= budget_message("Ada", remainings)
-result= budget_message("Tobi", remaining)
 
-print(message)
-print(result)
+#message= budget_message("Ada", remainings)
+#result= budget_message("Tobi", remaining)
+
+#print(message)
+#print(result)
